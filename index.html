@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>언니야 생일 축하해🎉</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="mobile-container">
+        
+        <div id="introScreen" class="text-center text-dark">
+            <div class="envelope-icon mb-4" onclick="openLetter()">🧸</div>
+            <h1 class="fw-bold mb-4" style="color: #d81b60;">언니야 생일 축하해🎈</h1>
+            <p class="text-muted mb-5" style="font-size: 1.2rem;">♪ ♬ ヾ(´︶`♡)ﾉ ♬ ♪</p>
+            <button class="btn btn-custom shadow-sm" onclick="openLetter()">
+                눌러보겠어?
+            </button>
+        </div>
+
+        <div id="letterScreen" class="d-none">
+            <div class="card letter-card">
+                <div class="layout-wrapper">
+                    
+                    <div class="title-section">
+                        <div class="mb-3" style="font-size: 4.5rem; line-height: 1;">🎂</div>
+                        <h2 class="card-title fw-bold mb-0" style="color: #d81b60;">Happy Birthday <br> ٩( ˙0˙)۶</h2>
+                    </div>
+                    
+                    <div class="text-section">
+                        <p class="card-text text-start text-dark letter-content mb-0">
+                            안녕 언니야, 어색하긴 정말 어색하다.<br>
+                            그래도 편지를 받았으니 답장을 해야 하는 게 예의 아니겠어? 허허...<br><br>
+                            
+                            우선 생일 축하해. 한국에 있었으면 생일 초라도 같이 불었을 텐데, 
+                            미역국도 못 챙겨주고 이리저리 아쉬울 따름이야. 많이 늦어지긴 하겠지만, 한국 오면 미역국은 끓여줄게.<br><br>
+                            
+                            타지에서 혼자 일하느라 고생이 많아. 아플 때 엄살도 심한 사람이 병원도 못 가고, 
+                            제대로 치료도 못 받고, 쉬지도 못하고... 
+                            먹는 게 낙인 사람이 입맛은 또 까다로워서 제대로 챙겨 먹지도 못하고 맨날 과일이나 음료수로 때울때도 있으니까 
+                            옆에서 챙겨줄 수가 없어서 가끔은 답답하고 걱정돼.<br><br>
+                            
+                            그래도 언니가 정보원 다닐 때보다는 지금 환경이나 하는 일이 매일 툴툴거려도 
+                            더 잘 맞아 보이기도 하고, 많이 웃는 것 같아서 다행이야.<br><br>
+                            
+                            우리 같은 현승이 배에서 태어났지만 성격도 성향도 너무 달라서 신기해. 
+                            그래서 가끔 서로 답답해하고 싸울 때도 있지만, 
+                            언니 성격에 혼자 진정시키고 참으려고 노력하는 게 눈에 보여서 고맙기도 해.<br><br>
+                            
+                            음 첫째다 보니 혼자 챙겨야 하는 것도, 짊어져야 하는 것도 훨씬 많았을 테고, 
+                            언니가 있어서 내가 쉽게 쉽게 살아온 거 아닐까라는 생각도 들어. 
+                            막내라는 이유로 챙김을 많이 받긴 했으니까. 
+                            이제는 같이 엄마 잘 챙기면서 여행도 가고, 추억도 많이 쌓자! (˵ •̀ ᴗ - ˵ )
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openLetter() {
+            const intro = document.getElementById('introScreen');
+            const letter = document.getElementById('letterScreen');
+
+            intro.classList.add('d-none');
+            
+            letter.classList.remove('d-none');
+            letter.classList.add('fade-in-up');
+        }
+    </script>
+</body>
+</html>
